@@ -1,21 +1,350 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ristorante Bella Italia - Authentische italienische Küche seit 1987">
+    <title>Ristorante Bella Italia - Italienisches Restaurant München</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h1>Bella Italia</h1>
+                    <p>RISTORANTE</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">ÜBER UNS</a></li>
+                    <li><a href="#menu">SPEISEKARTE</a></li>
+                    <li><a href="#gallery">GALERIE</a></li>
+                    <li><a href="#wine">WEINE</a></li>
+                    <li><a href="#contact">KONTAKT</a></li>
+                    <li><a href="#contact" class="btn-reserve">RESERVIEREN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <meta name="description" content="Ristorante Bella Italia – Authentische italienische Küche in Mailänder Tradition. Erleben Sie die Aromen Italiens." />
-    <title>Ristorante Bella Italia</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
-  </head>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">SEIT 1987 IN MAILÄNDER TRADITION</p>
+            <h2 class="hero-title">Bella Italia</h2>
+            <p class="hero-description">Authentische italienische Küche – zubereitet mit Leidenschaft, frischen Zutaten und über 35 Jahren Erfahrung.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">SPEISEKARTE ANSEHEN</a>
+                <a href="#contact" class="btn btn-secondary">TISCH RESERVIEREN</a>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Über Uns</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Das Ristorante Bella Italia ist seit 1987 ein Wahrzeichen der authentischen italienischen Küche in München. Mit Leidenschaft und Liebe zum Detail bereiten wir traditionelle italienische Gerichte zu, die Generationen von Gästen begeistert haben.</p>
+                    <p>Unser Küchenchef Marco Rossi stammt direkt aus Mailand und bringt die echte italienische Tradition auf jeden Teller. Wir verwenden nur die besten, frischesten Zutaten – von handgemachter Pasta bis zu importiertem Parmigiano Reggiano.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>35+</h3>
+                        <p>Jahre Erfahrung</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50.000+</h3>
+                        <p>Zufriedene Gäste</p>
+                    </div>
+                    <div class="stat">
+                        <h3>7 Tage</h3>
+                        <p>Geöffnet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="opening-hours">
+                <h3>Öffnungszeiten</h3>
+                <p>Montag – Donnerstag: 11:30 – 23:00 Uhr</p>
+                <p>Freitag – Samstag: 11:30 – 00:00 Uhr</p>
+                <p>Sonntag: 12:00 – 23:00 Uhr</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>Speisekarte</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="vorspeisen">Vorspeisen</button>
+                <button class="filter-btn" data-filter="pasta">Pasta</button>
+                <button class="filter-btn" data-filter="hauptgericht">Hauptgericht</button>
+                <button class="filter-btn" data-filter="dessert">Dessert</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Vorspeisen -->
+                <div class="menu-item" data-category="vorspeisen">
+                    <img src="images/bruschetta.jpg" alt="Bruschetta al Pomodoro">
+                    <h3>Bruschetta al Pomodoro</h3>
+                    <p>Geröstetes Brot mit frischen Tomaten, Knoblauch und Basilikum</p>
+                    <span class="price">€ 8,50</span>
+                </div>
+                <div class="menu-item" data-category="vorspeisen">
+                    <img src="images/calamari-fritti.jpg" alt="Calamari Fritti">
+                    <h3>Calamari Fritti</h3>
+                    <p>Knusprig frittierte Tintenfische mit Zitrone und Aioli</p>
+                    <span class="price">€ 12,00</span>
+                </div>
+                <div class="menu-item" data-category="vorspeisen">
+                    <img src="images/antipasti.jpg" alt="Antipasti Misti">
+                    <h3>Antipasti Misti</h3>
+                    <p>Auswahl aus Prosciutto, Mozzarella, Oliven und eingelegtem Gemüse</p>
+                    <span class="price">€ 14,50</span>
+                </div>
+
+                <!-- Pasta -->
+                <div class="menu-item" data-category="pasta">
+                    <img src="images/carbonara.jpg" alt="Spaghetti Carbonara">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Klassisches römisches Gericht mit Guanciale, Ei und Pecorino</p>
+                    <span class="price">€ 14,00</span>
+                </div>
+                <div class="menu-item" data-category="pasta">
+                    <img src="images/fettuccine-alfredo.jpg" alt="Fettuccine Alfredo">
+                    <h3>Fettuccine Alfredo</h3>
+                    <p>Handgemachte Fettuccine mit cremiger Parmesan-Sauce</p>
+                    <span class="price">€ 13,50</span>
+                </div>
+                <div class="menu-item" data-category="pasta">
+                    <img src="images/risotto-funghi.jpg" alt="Risotto ai Funghi Porcini">
+                    <h3>Risotto ai Funghi Porcini</h3>
+                    <p>Cremiges Risotto mit Steinpilzen und Trüffelöl</p>
+                    <span class="price">€ 16,00</span>
+                </div>
+                <div class="menu-item" data-category="pasta">
+                    <img src="images/lasagna.jpg" alt="Lasagna della Nonna">
+                    <h3>Lasagna della Nonna</h3>
+                    <p>Traditionelle Lasagne mit Ragù und Béchamel-Sauce</p>
+                    <span class="price">€ 15,00</span>
+                </div>
+
+                <!-- Hauptgericht -->
+                <div class="menu-item" data-category="hauptgericht">
+                    <img src="images/ossobuco.jpg" alt="Osso Buco">
+                    <h3>Osso Buco</h3>
+                    <p>Geschmorte Kalbshaxe mit Gemüse und Gremolata</p>
+                    <span class="price">€ 28,00</span>
+                </div>
+                <div class="menu-item" data-category="hauptgericht">
+                    <img src="images/branzino.jpg" alt="Branzino al Forno">
+                    <h3>Branzino al Forno</h3>
+                    <p>Gebratener Wolfsbarsch mit Zitrone und Kräutern</p>
+                    <span class="price">€ 24,00</span>
+                </div>
+                <div class="menu-item" data-category="hauptgericht">
+                    <img src="images/saltimbocca.jpg" alt="Saltimbocca alla Romana">
+                    <h3>Saltimbocca alla Romana</h3>
+                    <p>Kalbsschnitzel mit Prosciutto und Salbei</p>
+                    <span class="price">€ 22,00</span>
+                </div>
+
+                <!-- Dessert -->
+                <div class="menu-item" data-category="dessert">
+                    <img src="images/tiramisu.jpg" alt="Tiramisu">
+                    <h3>Tiramisu</h3>
+                    <p>Klassisches italienisches Dessert mit Mascarpone und Kakao</p>
+                    <span class="price">€ 7,50</span>
+                </div>
+                <div class="menu-item" data-category="dessert">
+                    <img src="images/panna-cotta.jpg" alt="Panna Cotta">
+                    <h3>Panna Cotta</h3>
+                    <p>Cremige Vanille-Panna Cotta mit Beerensoße</p>
+                    <span class="price">€ 8,00</span>
+                </div>
+                <div class="menu-item" data-category="dessert">
+                    <img src="images/gelato.jpg" alt="Gelato Assortito">
+                    <h3>Gelato Assortito</h3>
+                    <p>Auswahl aus unseren hausgemachten Eissorten</p>
+                    <span class="price">€ 6,50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/pasta-carbonara.jpg" alt="Pasta Carbonara">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pizza-margherita.jpg" alt="Pizza Margherita">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/restaurant-interior.jpg" alt="Restaurant Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/wine-tasting.jpg" alt="Wine Tasting">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pizza-diavola.jpg" alt="Pizza Diavola">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ravioli.jpg" alt="Ravioli">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/espresso.jpg" alt="Espresso">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/focaccia.jpg" alt="Focaccia">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/linguine-vongole.jpg" alt="Linguine Vongole">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/parmigiana.jpg" alt="Eggplant Parmigiana">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dessert-board.jpg" alt="Dessert Board">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/chef-kitchen.jpg" alt="Chef in Kitchen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wine Section -->
+    <section class="wine" id="wine">
+        <div class="container">
+            <h2>Weinkarte</h2>
+            <div class="wine-grid">
+                <div class="wine-item">
+                    <h3>Barolo DOCG</h3>
+                    <p class="wine-region">Piemont</p>
+                    <p class="wine-description">Kräftiger Rotwein mit Noten von Kirschen und Rosen</p>
+                    <span class="price">€ 45,00</span>
+                </div>
+                <div class="wine-item">
+                    <h3>Chianti Classico Riserva</h3>
+                    <p class="wine-region">Toskana</p>
+                    <p class="wine-description">Eleganter Rotwein mit ausgeprägtem Körper</p>
+                    <span class="price">€ 35,00</span>
+                </div>
+                <div class="wine-item">
+                    <h3>Pinot Grigio</h3>
+                    <p class="wine-region">Venetien</p>
+                    <p class="wine-description">Frischer, trockener Weißwein mit Zitrusnoten</p>
+                    <span class="price">€ 28,00</span>
+                </div>
+                <div class="wine-item">
+                    <h3>Prosecco</h3>
+                    <p class="wine-region">Venetien</p>
+                    <p class="wine-description">Perlender Schaumwein, perfekt zum Aperitif</p>
+                    <span class="price">€ 32,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Kundenbewertungen</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p class="stars">★★★★★</p>
+                    <p class="text">"Das beste italienische Restaurant in München! Die Pasta ist handgemacht und absolut köstlich. Der Service ist freundlich und aufmerksam."</p>
+                    <p class="author">- Anna K.</p>
+                </div>
+                <div class="testimonial">
+                    <p class="stars">★★★★★</p>
+                    <p class="text">"Wir kommen regelmäßig hierher. Die Qualität ist konstant hervorragend und die Atmosphäre ist sehr gemütlich und authentisch."</p>
+                    <p class="author">- Marco R.</p>
+                </div>
+                <div class="testimonial">
+                    <p class="stars">★★★★★</p>
+                    <p class="text">"Ein echtes Stück Italien in München! Die Weine sind ausgezeichnet und das Personal kennt die Speisekarte perfekt."</p>
+                    <p class="author">- Lisa M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Kontakt & Reservierung</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Adresse</h3>
+                        <p>Marienplatz 5<br>80331 München</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Telefon</h3>
+                        <p><a href="tel:+498912345678">+49 (0)89 123 456 78</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>✉️ E-Mail</h3>
+                        <p><a href="mailto:info@bella-italia.de">info@bella-italia.de</a></p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ihr Name" required>
+                    <input type="email" placeholder="Ihre E-Mail" required>
+                    <input type="tel" placeholder="Ihre Telefonnummer" required>
+                    <input type="date" required>
+                    <select required>
+                        <option value="">Anzahl Personen</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Personen</option>
+                        <option value="3">3 Personen</option>
+                        <option value="4">4 Personen</option>
+                        <option value="5">5 Personen</option>
+                        <option value="6">6+ Personen</option>
+                    </select>
+                    <textarea placeholder="Besondere Wünsche..." rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">RESERVIERUNG ANFRAGEN</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Italia</h3>
+                    <p>Authentische italienische Küche seit 1987</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Do: 11:30 - 23:00<br>Fr-Sa: 11:30 - 00:00<br>So: 12:00 - 23:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p><a href="tel:+498912345678">+49 (0)89 123 456 78</a><br><a href="mailto:info@bella-italia.de">info@bella-italia.de</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <p><a href="html/impressum.html">Impressum</a> | <a href="html/datenschutz.html">Datenschutz</a> | <a href="html/agb.html">AGB</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ristorante Bella Italia. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>

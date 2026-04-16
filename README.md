@@ -1,66 +1,82 @@
-# Ristorante Bella Italia – Statische Website
+# Ristorante Bella Italia - Website
 
-Authentische italienische Küche in Mailänder Tradition.
+Eine professionelle, responsive Website für ein italienisches Restaurant mit HTML, CSS und JavaScript.
 
-## GitHub Pages Deployment
-
-### Schritt 1: Repository erstellen
-
-1. Gehe zu [github.com](https://github.com) und erstelle ein **neues Repository**
-2. Benenne es z.B. `ristorante-bella-italia`
-3. Setze es auf **Public** (für kostenlose GitHub Pages)
-
-### Schritt 2: Code hochladen
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/DEIN-USERNAME/ristorante-bella-italia.git
-git push -u origin main
-```
-
-### Schritt 3: GitHub Pages aktivieren
-
-1. Gehe zu deinem Repository → **Settings** → **Pages**
-2. Unter **Source** wähle: **GitHub Actions**
-3. Der Workflow wird automatisch ausgeführt und die Seite deployed
-
-### Schritt 4: URL anpassen (wichtig bei Unterverzeichnis!)
-
-Wenn dein Repository **nicht** `DEIN-USERNAME.github.io` heißt, sondern z.B. `ristorante-bella-italia`,
-dann musst du in `vite.config.ts` die `base`-Option setzen:
-
-```ts
-// vite.config.ts
-export default defineConfig({
-  // ...
-  base: "/ristorante-bella-italia/",  // <- Dein Repository-Name
-});
-```
-
-Danach erneut committen und pushen.
-
-### Deine Website-URL
-
-Nach dem Deployment ist die Seite erreichbar unter:
+## 📁 Projektstruktur
 
 ```
-https://DEIN-USERNAME.github.io/ristorante-bella-italia/
+bella-italia-html/
+├── index.html              # Hauptseite
+├── css/
+│   └── style.css          # Hauptstylesheet
+├── js/
+│   └── script.js          # JavaScript-Funktionalität
+├── html/
+│   ├── impressum.html     # Impressum
+│   ├── datenschutz.html   # Datenschutzerklärung
+│   └── agb.html           # Allgemeine Geschäftsbedingungen
+├── images/                # Bilder (leer - verwendet externe URLs)
+└── README.md              # Diese Datei
 ```
 
-## Lokale Entwicklung
+## 🚀 Schnellstart
 
-```bash
-npm install
-npm run dev
-```
+1. **Ordner entpacken** – Extrahiere das ZIP-Archiv
+2. **index.html öffnen** – Doppelklick auf `index.html` oder öffne sie im Browser
+3. **Fertig!** – Die Website wird im Browser angezeigt
 
-## Build
+## ✨ Features
 
-```bash
-npm run build
-```
+- **Responsive Design** – Funktioniert auf Desktop, Tablet und Mobilgeräten
+- **Moderne Ästhetik** – Elegantes Mailänder Bistro Design
+- **Speisekarte mit Filtern** – Kategorien: Vorspeisen, Pasta, Hauptgericht, Dessert
+- **Reservierungsformular** – Einfaches Buchungssystem
+- **Galerie** – Bildergalerie mit Unsplash-Bildern
+- **Weinkarte** – Auswahl italienischer Weine
+- **Kundenbewertungen** – Testimonials Section
+- **Rechtliche Seiten** – Impressum, Datenschutz, AGB
+- **Smooth Scrolling** – Flüssige Navigation
+- **Animationen** – Subtile Scroll- und Hover-Effekte
 
-Die fertige statische Website liegt dann im `dist/`-Ordner.
+## 🎨 Design
+
+- **Farben:**
+  - Primär Dunkel: #1a2332 (Nachtblau)
+  - Akzent: #c41e3a (Tomatenrot)
+  - Gold: #d4af37 (Highlights)
+  - Hintergrund: #f5f1e8 (Creme)
+
+- **Schriften:**
+  - Display: Cormorant Garamond
+  - Body: DM Sans
+
+## 📝 Inhalte anpassen
+
+### Restaurant-Informationen ändern
+
+Öffne `index.html` und suche nach:
+- `Via Roma 42` – Adresse ändern
+- `+49 (0) 89 123 456 78` – Telefon ändern
+- `info@bella-italia.de` – E-Mail ändern
+
+### Speisekarte bearbeiten
+
+Einfach neue Menu-Items in `index.html` hinzufügen!
+
+### Farben ändern
+
+Öffne `css/style.css` und ändere die CSS-Variablen.
+
+## 🌐 Online veröffentlichen
+
+- GitHub Pages (kostenlos)
+- Netlify (kostenlos)
+- Vercel (kostenlos)
+
+## 📞 Kontakt
+
+info@bella-italia.de | +49 (0) 89 123 456 78
+
+---
+
+**Viel Erfolg mit deiner Restaurant-Website! 🍝**
